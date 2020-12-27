@@ -3,11 +3,11 @@
   <title>Starman&#39;s Corner</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://starman-swa.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://starman-swa.github.io/"/>
   <updated>2020-12-27T18:09:42.476Z</updated>
-  <id>http://example.com/</id>
+  <id>https://starman-swa.github.io/</id>
   
   <author>
     <name>Starman</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>写点什么</title>
-    <link href="http://example.com/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/"/>
-    <id>http://example.com/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/</id>
+    <link href="https://starman-swa.github.io/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/"/>
+    <id>https://starman-swa.github.io/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/</id>
     <published>2020-12-27T17:46:38.000Z</published>
     <updated>2020-12-27T18:09:42.476Z</updated>
     
@@ -37,7 +37,7 @@
     
     
     
-    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://starman-swa.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
