@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-27T15:18:02.490Z</updated>
+  <updated>2020-12-27T18:09:42.476Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,23 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2020/12/27/hello-world/"/>
-    <id>http://example.com/2020/12/27/hello-world/</id>
-    <published>2020-12-27T15:18:02.490Z</published>
-    <updated>2020-12-27T15:18:02.490Z</updated>
+    <title>写点什么</title>
+    <link href="http://example.com/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/"/>
+    <id>http://example.com/2020/12/28/%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/</id>
+    <published>2020-12-27T17:46:38.000Z</published>
+    <updated>2020-12-27T18:09:42.476Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt;凌晨1:50，刚刚搭完博客。&lt;/p&gt;
+&lt;p&gt;不知道度过了多少个碌碌无为的日日夜夜，不知道自己所追求的虚无缥缈的目标到底有什么意义，梦想这个词似乎与我渐行渐远，我也早已不再是某位长辈口中的那个“愣头青”了。&lt;/p&gt;
+&lt;p&gt;至于为什么，是经历？是年龄？是环境？我也说不准。或许现</summary>
         
       
     
     
     
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
