@@ -140,6 +140,67 @@
     
     
     <article
+  id="post-区间调度问题"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/"
+    >区间调度问题</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/" class="article-date">
+  <time datetime="2020-12-28T14:58:17.000Z" itemprop="datePublished">2020-12-28</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="一、区间不相交问题"><a href="#一、区间不相交问题" class="headerlink" title="一、区间不相交问题"></a>一、区间不相交问题</h2><blockquote>
+<p>给出N个开区间(start, end)，从中选择尽可能多的区间，使得这些区间两两不相交。</p>
+</blockquote>
+<p>解决思路是将区间集合S中的所有区间按照end值从小到大的顺序进行排序，然后执行下列步骤：</p>
+<ol>
+<li>从区间集合S中选取end值最小的区间i，将i加入区间集合T。</li>
+<li>寻找与i相交的所有区间，将这些区间从集合S中删除。</li>
+<li>若S非空，跳转到步骤1。</li>
+</ol>
+<p>区间T即为所求。</p>
+<p>证明思路可以考虑反证法：假设某一次选择的i的end值并不是集合S中最大的，如果存在与区间i相交且end值更小的区间i’，则选择i’所移除的区间数不会大于选择i所移除的区间数，此时选取end值更小的i’会使局部结果更优。</p> 
+      <a class="article-more-link" href="/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">贪心算法</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-写点什么"
   class="article article-type-post"
   itemscope

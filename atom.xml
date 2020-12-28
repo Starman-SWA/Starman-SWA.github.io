@@ -6,7 +6,7 @@
   <link href="https://starman-swa.github.io/atom.xml" rel="self"/>
   
   <link href="https://starman-swa.github.io/"/>
-  <updated>2020-12-27T18:09:42.476Z</updated>
+  <updated>2020-12-28T15:10:08.558Z</updated>
   <id>https://starman-swa.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区间调度问题</title>
+    <link href="https://starman-swa.github.io/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/"/>
+    <id>https://starman-swa.github.io/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/</id>
+    <published>2020-12-28T14:58:17.000Z</published>
+    <updated>2020-12-28T15:10:08.558Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一、区间不相交问题&quot;&gt;&lt;a href=&quot;#一、区间不相交问题&quot; class=&quot;headerlink&quot; title=&quot;一、区间不相交问题&quot;&gt;&lt;/a&gt;一、区间不相交问题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给出N个开区间(start, end)，从中选择尽可能多的区间，使得这些区间两两不相交。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决思路是将区间集合S中的所有区间按照end值从小到大的顺序进行排序，然后执行下列步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从区间集合S中选取end值最小的区间i，将i加入区间集合T。&lt;/li&gt;
+&lt;li&gt;寻找与i相交的所有区间，将这些区间从集合S中删除。&lt;/li&gt;
+&lt;li&gt;若S非空，跳转到步骤1。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;区间T即为所求。&lt;/p&gt;
+&lt;p&gt;证明思路可以考虑反证法：假设某一次选择的i的end值并不是集合S中最大的，如果存在与区间i相交且end值更小的区间i’，则选择i’所移除的区间数不会大于选择i所移除的区间数，此时选取end值更小的i’会使局部结果更优。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="算法" scheme="https://starman-swa.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="贪心算法" scheme="https://starman-swa.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>写点什么</title>
