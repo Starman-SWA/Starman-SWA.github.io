@@ -6,7 +6,7 @@
   <link href="https://starman-swa.github.io/atom.xml" rel="self"/>
   
   <link href="https://starman-swa.github.io/"/>
-  <updated>2020-12-28T15:35:35.122Z</updated>
+  <updated>2021-01-01T13:40:12.005Z</updated>
   <id>https://starman-swa.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>两道求最大面积的题目在解法上的不同</title>
+    <link href="https://starman-swa.github.io/2021/01/01/%E4%B8%A4%E9%81%93%E6%B1%82%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF%E7%9A%84%E9%A2%98%E7%9B%AE%E5%9C%A8%E8%A7%A3%E6%B3%95%E4%B8%8A%E7%9A%84%E4%B8%8D%E5%90%8C/"/>
+    <id>https://starman-swa.github.io/2021/01/01/%E4%B8%A4%E9%81%93%E6%B1%82%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF%E7%9A%84%E9%A2%98%E7%9B%AE%E5%9C%A8%E8%A7%A3%E6%B3%95%E4%B8%8A%E7%9A%84%E4%B8%8D%E5%90%8C/</id>
+    <published>2021-01-01T13:18:59.000Z</published>
+    <updated>2021-01-01T13:40:12.005Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天发现两道看似十分相似但实际上有很大不同的题目，差点转不过弯来，分别是&lt;strong&gt;LeetCode 11 盛最多水的容器&lt;/strong&gt;和&lt;strong&gt;LeetCode 84 柱状图中最大的矩形&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LeetCode 11 盛最多水的容器&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。&lt;/p&gt;
+&lt;p&gt;说明：你不能倾斜容器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;LeetCode 84 柱状图中最大的矩形&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给定 &lt;em&gt;n&lt;/em&gt; 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。&lt;/p&gt;
+&lt;p&gt;求在该柱状图中，能够勾勒出来的矩形的最大面积。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="算法" scheme="https://starman-swa.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="贪心算法" scheme="https://starman-swa.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>区间调度问题</title>

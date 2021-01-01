@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    About Me |  Starman&#39;s Corner
+    两道求最大面积的题目在解法上的不同 |  Starman&#39;s Corner
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -45,8 +45,8 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="page-"
-  class="article article-type-page"
+  id="post-两道求最大面积的题目在解法上的不同"
+  class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -56,19 +56,60 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  About Me
+  两道求最大面积的题目在解法上的不同
 </h1>
  
 
     </header>
-       
+     
+    <div class="article-meta">
+      <a href="/2021/01/01/%E4%B8%A4%E9%81%93%E6%B1%82%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF%E7%9A%84%E9%A2%98%E7%9B%AE%E5%9C%A8%E8%A7%A3%E6%B3%95%E4%B8%8A%E7%9A%84%E4%B8%8D%E5%90%8C/" class="article-date">
+  <time datetime="2021-01-01T13:18:59.000Z" itemprop="datePublished">2021-01-01</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">778</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">2 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
-  <blockquote>
-<p>To be a sailor of the world, bound for all ports.</p>
+  <p>今天发现两道看似十分相似但实际上有很大不同的题目，差点转不过弯来，分别是<strong>LeetCode 11 盛最多水的容器</strong>和<strong>LeetCode 84 柱状图中最大的矩形</strong>。</p>
+<p><strong>LeetCode 11 盛最多水的容器</strong></p>
+<blockquote>
+<p>给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p>
+<p>说明：你不能倾斜容器。</p>
 </blockquote>
-<p>Starman，一个普通人，就读于HUST</p>
-<p>E-mail: <a href="mailto:&#122;&#104;&#x65;&#110;&#x67;&#x63;&#x68;&#x65;&#110;&#x70;&#x72;&#x63;&#x40;&#x6f;&#x75;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;">&#122;&#104;&#x65;&#110;&#x67;&#x63;&#x68;&#x65;&#110;&#x70;&#x72;&#x63;&#x40;&#x6f;&#x75;&#116;&#x6c;&#x6f;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p><strong>LeetCode 84 柱状图中最大的矩形</strong></p>
+<blockquote>
+<p>给定 <em>n</em> 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。</p>
+<p>求在该柱状图中，能够勾勒出来的矩形的最大面积。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>我先写了84题，再回过头写11题时，以为两道题的区别就是柱状图和“挡板”的区别，还是用单调栈的方法，只需在求面积的时候做一点小修改即可。</p>
+<p>先看84题。从左往右遍历柱状图的每一个柱形，若当前遍历到的柱形比上一个柱形高，则无法确定以上一个柱形的高为高的最大矩形面积，因为矩形可以越过当前柱形，一直延伸到右边，而右边的情况还不知道；反之，若当前遍历到的柱形比上一个柱形低，则以上一个柱形的高为高的矩形肯定无法越过当前柱形，又因为其左侧所有柱形已经遍历过了，所以矩形能够延伸到的左右两边的极限都可以确定，以上一个柱形的高为高的最大矩形面积也确定下来了。实际上，以当前柱形左侧的所有比当前柱形高的柱形的高为高的最大矩形面积都可以确定下来了。上述算法可以通过栈实现，栈中依次存储所有以第i个柱形为高的矩形的最大面积还未确定时的i值。</p>
+<p>解决了第84题，我把代码套到第11题的时候发现无论我怎么修改边界条件，得出来的结果与答案都相去甚远。再次读题目的时候发现两道题有一个很大的不同：在第11题中，若确定了左右边界i、j，则所得矩形的高为min{height[i], height[j]}，换言之，<strong>水可以漫过挡板i、j中间的挡板</strong>；但在第84题中，所得矩形的高还受柱形i、j中间的柱形的限制，其值为min{height[i], height[i + 1], …, height[j - 1], height[j]}，换言之，<strong>柱形相当于容器，水不能超出容器，而且水的形状必须是矩形，可以将其理解为“冰块”</strong>。</p>
+<p>因此，第11题只要确定了左右边界i、j，就可以确定矩形的面积，故遍历时使用双指针即可。</p>
  
       <!-- reward -->
       
@@ -76,6 +117,18 @@
     
 
     <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
     
     <footer class="article-footer">
        
@@ -121,17 +174,56 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://starman-swa.github.io/About.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://starman-swa.github.io/2021/01/01/%E4%B8%A4%E9%81%93%E6%B1%82%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF%E7%9A%84%E9%A2%98%E7%9B%AE%E5%9C%A8%E8%A7%A3%E6%B3%95%E4%B8%8A%E7%9A%84%E4%B8%8D%E5%90%8C/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">贪心算法</a></li></ul>
+
     </footer>
   </div>
 
    
-  
+  <nav class="article-nav">
     
+    
+      <a href="/2020/12/28/%E5%8C%BA%E9%97%B4%E8%B0%83%E5%BA%A6%E9%97%AE%E9%A2%98/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">区间调度问题</div>
+      </a>
+    
+  </nav>
+
+  
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '363970481e5646ccc903',
+    clientSecret: '204c86a986af07700a85811abf572b872bafd152',
+    repo: 'blog_gitalk_storage',
+    owner: 'Starman-SWA',
+    admin: ['Starman-SWA'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+     
 </article>
 
 </section>
@@ -273,6 +365,23 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
