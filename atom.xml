@@ -6,7 +6,7 @@
   <link href="https://starman-swa.github.io/atom.xml" rel="self"/>
   
   <link href="https://starman-swa.github.io/"/>
-  <updated>2021-01-01T13:40:12.005Z</updated>
+  <updated>2021-01-14T17:42:18.115Z</updated>
   <id>https://starman-swa.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次几乎踩了所有坑的Ubuntu双系统安装</title>
+    <link href="https://starman-swa.github.io/2021/01/15/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%87%A0%E4%B9%8E%E8%B8%A9%E4%BA%86%E6%89%80%E6%9C%89%E5%9D%91%E7%9A%84Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    <id>https://starman-swa.github.io/2021/01/15/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%87%A0%E4%B9%8E%E8%B8%A9%E4%BA%86%E6%89%80%E6%9C%89%E5%9D%91%E7%9A%84Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</id>
+    <published>2021-01-14T17:20:37.000Z</published>
+    <updated>2021-01-14T17:42:18.115Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我的破本本用虚拟机跑Linux实在是顶不住，于是我昨天晚上一时兴起，想要给笔记本装 Windows 10 + Ubuntu 20.04 LTS 双系统。我的笔记本是UEFI引导，128GB SSD + 1TB机械硬盘，分区表格式都是GPT，Windows 10装在SSD上，计划在机械硬盘上分出128GB装Ubuntu（至于为什么才分这么点，显然是因为1T的硬盘几乎快被游戏填满了，逃）。&lt;/p&gt;
+&lt;p&gt;要么是我电脑的硬件兼容性太差，要么是我运气不佳，这次安装我居然步步踩坑，从昨天晚上折腾到今天晚上才把所有问题解决。&lt;strong&gt;这篇文章记录了我踩坑的全过程，仅供参考，切勿当作教程使用。&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Linux" scheme="https://starman-swa.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>两道求最大面积的题目在解法上的不同</title>
